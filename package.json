@@ -184,11 +184,7 @@
         },
         "cse.insertMode": {
           "type": "string",
-          "enum": [
-            "clipboard",
-            "cursor",
-            "newFile"
-          ],
+          "enum": ["clipboard", "cursor", "newFile"],
           "default": "clipboard",
           "description": "How to deliver injected skill content"
         },
@@ -204,11 +200,7 @@
         },
         "cse.compressionLevel": {
           "type": "string",
-          "enum": [
-            "lite",
-            "full",
-            "ultra"
-          ],
+          "enum": ["lite", "full", "ultra"],
           "default": "full",
           "description": "Token compression intensity level"
         }
