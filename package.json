@@ -184,7 +184,11 @@
         },
         "cse.insertMode": {
           "type": "string",
-          "enum": ["clipboard", "cursor", "newFile"],
+          "enum": [
+            "clipboard",
+            "cursor",
+            "newFile"
+          ],
           "default": "clipboard",
           "description": "How to deliver injected skill content"
         },
@@ -200,7 +204,11 @@
         },
         "cse.compressionLevel": {
           "type": "string",
-          "enum": ["lite", "full", "ultra"],
+          "enum": [
+            "lite",
+            "full",
+            "ultra"
+          ],
           "default": "full",
           "description": "Token compression intensity level"
         }
@@ -214,7 +222,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile",
-    "test": "node ./dist/test/runTest.js",
+    "test": "npm run test:v2",
     "package": "vsce package",
     "publish:vsce": "vsce publish",
     "publish:ovsx": "ovsx publish",
