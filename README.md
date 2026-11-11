@@ -6,6 +6,10 @@
 
 This repository contains the **v2 runtime** and a preserved, read-only snapshot of the original v1 Cognitive Skills Engine. v2 is deliberately modest about what an orchestration layer can prove: it routes work, records the route, attaches provenance, and makes uncertainty visible. It does not claim consciousness, human-level reasoning, or automatic validation of external facts.
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> The Advanced Edition adds a dependency-free routing and evidence-trace runtime while preserving compatibility with earlier skill files and interfaces. This supports incremental adoption without rebuilding existing integrations or adding a model service for local orchestration. The <a href="#compatibility-and-integration-guidance">integration guidance</a> makes routes, sources and uncertainty inspectable, reducing the work of reconstructing how a task was handled.</sub>
+<!-- impact-note:end -->
+
 ## What is new in v2
 
 - **Deterministic routing** from a task description to the 6×4 board vocabulary.
